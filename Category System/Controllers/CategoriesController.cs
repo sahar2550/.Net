@@ -119,7 +119,7 @@ namespace Category_System.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory([FromRoute] long id)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) 
             {
                 return BadRequest(ModelState);
             }
